@@ -35,10 +35,12 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
+    - Assembly-CSharp
     - Assembly-CSharp-firstpass
     - PolymindGames
     - PolymindGames.OdinSerializer
     - ProPixelizer
+    - RayFireAssembly
     - sapra.InfiniteLands
     - sapra.InfiniteLands.PlayTests
     - Toolbox
