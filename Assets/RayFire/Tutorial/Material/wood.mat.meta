@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cdbbc820d82eac642805234ce10bf2d6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Material/wood.mat
+  uploadId: 777004

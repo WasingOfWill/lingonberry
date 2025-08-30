@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8e417de65e38c4644ad6f6dd202f04fd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Material/Custom.physicMaterial
+  uploadId: 777004

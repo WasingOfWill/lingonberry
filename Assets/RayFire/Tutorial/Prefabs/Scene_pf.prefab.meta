@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f7b67bc08186d14ba66630d8e7527ef
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Prefabs/Scene_pf.prefab
+  uploadId: 777004

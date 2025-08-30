@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 297fb281d5890b8478cf5828f2b01ad2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Fbx/columns_frags.asset
+  uploadId: 777004

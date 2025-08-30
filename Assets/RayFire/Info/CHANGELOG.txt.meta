@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dce9e2733478bbc4ab68c5769c93ee74
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Info/CHANGELOG.txt
+  uploadId: 777004

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fdb01d144f6b5f04f80a1b8d2caec68b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Prefabs/Slabs_1.prefab
+  uploadId: 777004

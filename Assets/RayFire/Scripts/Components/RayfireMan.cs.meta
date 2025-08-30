@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 11647ba8b66e7134ab169f6a13c473e3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -50
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Scripts/Components/RayfireMan.cs
+  uploadId: 777004

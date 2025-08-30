@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e92eebaaa1a3b534faaf2eccdfb8bc3d
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Info/FAQ.txt
+  uploadId: 777004

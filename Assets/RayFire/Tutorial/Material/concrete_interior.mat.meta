@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 531f23781ad1cd446a6005665c959178
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Material/concrete_interior.mat
+  uploadId: 777004

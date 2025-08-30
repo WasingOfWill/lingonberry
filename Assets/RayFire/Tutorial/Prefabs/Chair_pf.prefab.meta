@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aecd8a3ca0c2e2b41a59c6c77759e35b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Prefabs/Chair_pf.prefab
+  uploadId: 777004

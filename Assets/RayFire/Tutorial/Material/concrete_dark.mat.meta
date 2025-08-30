@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d248439f8fba4a143a50b3df6fa3f2ab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Material/concrete_dark.mat
+  uploadId: 777004

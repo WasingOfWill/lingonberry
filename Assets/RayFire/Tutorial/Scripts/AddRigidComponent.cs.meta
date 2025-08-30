@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ca8534bfa1460d541a8ee7b9c66b32d1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Tutorial/Scripts/AddRigidComponent.cs
+  uploadId: 777004

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3757c23f4643ac4428b93e486fe9a55b
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148690
+  packageName: RayFire for Unity
+  packageVersion: 1.86
+  assetPath: Assets/RayFire/Info/Logo/logo.txt
+  uploadId: 777004
