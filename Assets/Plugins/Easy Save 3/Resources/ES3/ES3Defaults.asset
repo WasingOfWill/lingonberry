@@ -38,6 +38,9 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - PolymindGames
     - PolymindGames.OdinSerializer
+    - ProPixelizer
+    - sapra.InfiniteLands
+    - sapra.InfiniteLands.PlayTests
     - Toolbox
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
