@@ -7,6 +7,12 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using System;
+using UnityEngine.Rendering;
+#if POLYMIND_GAMES_FPS_URP
+using UnityEngine.Rendering.Universal;
+#elif POLYMIND_GAMES_FPS_HDRP
+using UnityEngine.Rendering.HighDefinition;
+#endif
 
 namespace PolymindGames.Editor
 {
