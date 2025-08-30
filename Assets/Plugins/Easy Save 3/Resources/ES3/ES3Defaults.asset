@@ -37,11 +37,15 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - Lofelt.NiceVibrations
+    - Lofelt.NiceVibrations.Demo
+    - MoreMountains.Tools
     - PolymindGames
     - PolymindGames.OdinSerializer
     - ProPixelizer
     - RayFireAssembly
     - sapra.InfiniteLands
+    - sapra.InfiniteLands.GenerationBuiltin
     - sapra.InfiniteLands.PlayTests
     - Toolbox
     showAdvancedSettings: 0
