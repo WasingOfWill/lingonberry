@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: World
   m_EditorClassIdentifier: 
   AutoUpdate: 1
-  position: {x: 586, y: 213}
-  scale: {x: 0.25, y: 0.25}
+  position: {x: 820.6667, y: -67.333336}
+  scale: {x: 0.57175326, y: 0.57175326}
   output:
     rid: 8246154232530993153
   nodes:

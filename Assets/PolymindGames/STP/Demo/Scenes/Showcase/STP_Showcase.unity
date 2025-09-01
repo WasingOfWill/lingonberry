@@ -456,6 +456,110 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 840949107910532129, guid: c6e848fe1022ef945896bfc2c00ef23c, type: 3}
   m_PrefabInstance: {fileID: 8251375189227341415}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &456206149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456206152}
+  - component: {fileID: 456206151}
+  - component: {fileID: 456206150}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &456206150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456206149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6960e84d07fb87f47956e7a81d71c4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProtocolType: 0
+  m_UseWebSockets: 0
+  m_UseEncryption: 0
+  m_MaxPacketQueueSize: 128
+  m_MaxPayloadSize: 6144
+  m_HeartbeatTimeoutMS: 500
+  m_ConnectTimeoutMS: 1000
+  m_MaxConnectAttempts: 60
+  m_DisconnectTimeoutMS: 30000
+  ConnectionData:
+    Address: 127.0.0.1
+    Port: 7777
+    ServerListenAddress: 127.0.0.1
+  DebugSimulator:
+    PacketDelayMS: 0
+    PacketJitterMS: 0
+    PacketDropRate: 0
+--- !u!114 &456206151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456206149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593a2fe42fa9d37498c96f9a383b6521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetworkManagerExpanded: 0
+  NetworkConfig:
+    ProtocolVersion: 0
+    NetworkTransport: {fileID: 456206150}
+    PlayerPrefab: {fileID: 0}
+    Prefabs:
+      NetworkPrefabsLists:
+      - {fileID: 11400000, guid: c77b43cc9df39814992725c967c5b57b, type: 2}
+    TickRate: 30
+    ClientConnectionBufferTimeout: 10
+    ConnectionApproval: 0
+    ConnectionData: 
+    EnableTimeResync: 0
+    TimeResyncInterval: 30
+    EnsureNetworkVariableLengthSafety: 0
+    EnableSceneManagement: 1
+    ForceSamePrefabs: 1
+    RecycleNetworkIds: 1
+    NetworkIdRecycleDelay: 120
+    RpcHashSize: 0
+    LoadSceneTimeOut: 120
+    SpawnTimeout: 10
+    EnableNetworkLogs: 1
+    NetworkTopology: 0
+    UseCMBService: 0
+    AutoSpawnPlayerPrefabClientSide: 1
+    NetworkProfilingMetrics: 1
+    OldPrefabList: []
+  RunInBackground: 1
+  LogLevel: 1
+--- !u!4 &456206152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456206149}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 238, y: 0, z: 51.99999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &457278100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7887726065309684430, guid: c6e848fe1022ef945896bfc2c00ef23c, type: 3}
@@ -962,7 +1066,7 @@ Transform:
   m_GameObject: {fileID: 830191539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.00001, y: 0, z: 51.99999}
+  m_LocalPosition: {x: 238, y: 0, z: 51.99999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1044,7 +1148,7 @@ Transform:
   m_GameObject: {fileID: 893038851}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84, y: 2.0414474, z: 53.99999}
+  m_LocalPosition: {x: 238, y: 2.0414474, z: 53.99999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1098,37 +1202,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4615821819017626476, guid: c6e848fe1022ef945896bfc2c00ef23c, type: 3}
   m_PrefabInstance: {fileID: 8251375189227341415}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1056181816
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1056181817}
-  m_Layer: 0
-  m_Name: Main Camera As Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1056181817
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056181816}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1080474664}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1067010765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3397004925970719285, guid: c6e848fe1022ef945896bfc2c00ef23c, type: 3}
@@ -1149,38 +1222,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2373688424645018258, guid: c6e848fe1022ef945896bfc2c00ef23c, type: 3}
   m_PrefabInstance: {fileID: 8251375189227341415}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1080474660
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1080474664}
-  m_Layer: 0
-  m_Name: CameraControl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1080474664
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080474660}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.06289605, y: -0.9133117, z: 0.15389502, w: -0.37178227}
-  m_LocalPosition: {x: 3437.3005, y: 113.95855, z: 113.40039}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1056181817}
-  m_Father: {fileID: 2042222782}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1093334119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7922842349953011132, guid: c6e848fe1022ef945896bfc2c00ef23c, type: 3}
@@ -1279,182 +1320,182 @@ MonoBehaviour:
     - {fileID: 1255278647}
     - {fileID: 0}
     AllTransforms:
-    - {fileID: 1280785917}
-    - {fileID: 881165256}
-    - {fileID: 1128920472}
-    - {fileID: 661032731}
-    - {fileID: 1507627344}
-    - {fileID: 1885401003}
-    - {fileID: 1135781201}
-    - {fileID: 679632002}
-    - {fileID: 1638109084}
-    - {fileID: 100611712}
-    - {fileID: 849096144}
-    - {fileID: 743649782}
-    - {fileID: 2036050382}
-    - {fileID: 2012038010}
-    - {fileID: 265951854}
-    - {fileID: 713695848}
-    - {fileID: 590704141}
-    - {fileID: 1272363944}
-    - {fileID: 1068462029}
-    - {fileID: 1242059805}
-    - {fileID: 2042599107}
-    - {fileID: 1427402459}
-    - {fileID: 1609465158}
-    - {fileID: 897151123}
-    - {fileID: 1054206360}
-    - {fileID: 260088250}
-    - {fileID: 937259029}
-    - {fileID: 1866200379}
-    - {fileID: 309905941}
-    - {fileID: 1688085899}
-    - {fileID: 2121763478}
-    - {fileID: 831073353}
-    - {fileID: 84599613}
-    - {fileID: 1394647601}
-    - {fileID: 1445345279}
-    - {fileID: 1539778701}
-    - {fileID: 1671227562}
-    - {fileID: 2045236135}
-    - {fileID: 204826591}
-    - {fileID: 25624293}
-    - {fileID: 572675449}
-    - {fileID: 1175939010}
-    - {fileID: 1275730948}
-    - {fileID: 376013662}
-    - {fileID: 1494892144}
-    - {fileID: 1120552734}
-    - {fileID: 1338959225}
-    - {fileID: 786044216}
-    - {fileID: 1518206562}
-    - {fileID: 1247774744}
-    - {fileID: 590707534}
-    - {fileID: 1615020172}
-    - {fileID: 1537531977}
-    - {fileID: 816145847}
-    - {fileID: 1158166383}
-    - {fileID: 853086199}
-    - {fileID: 629576472}
-    - {fileID: 154595370}
-    - {fileID: 727546155}
-    - {fileID: 1240078490}
-    - {fileID: 71438931}
-    - {fileID: 651300374}
-    - {fileID: 684018281}
-    - {fileID: 1078708306}
-    - {fileID: 537007221}
-    - {fileID: 402578302}
-    - {fileID: 1752725813}
-    - {fileID: 433854517}
-    - {fileID: 1339995712}
-    - {fileID: 728230314}
-    - {fileID: 1471699286}
-    - {fileID: 2034302971}
-    - {fileID: 1383447616}
-    - {fileID: 2077641723}
-    - {fileID: 975380005}
-    - {fileID: 2016520327}
-    - {fileID: 340560707}
-    - {fileID: 710638517}
-    - {fileID: 582653957}
-    - {fileID: 227207430}
-    - {fileID: 57308259}
-    - {fileID: 1916911578}
-    - {fileID: 519182429}
-    - {fileID: 88280491}
-    - {fileID: 691171164}
-    - {fileID: 1362831115}
-    - {fileID: 2115520555}
-    - {fileID: 1120381183}
-    - {fileID: 147263160}
-    - {fileID: 759801290}
-    - {fileID: 135172290}
-    - {fileID: 1588806076}
-    - {fileID: 571842673}
-    - {fileID: 891354450}
-    - {fileID: 705901775}
-    - {fileID: 398441567}
-    - {fileID: 2123935}
-    - {fileID: 1205342009}
-    - {fileID: 98784388}
-    - {fileID: 1115764895}
-    - {fileID: 224823833}
-    - {fileID: 417858899}
-    - {fileID: 31402868}
-    - {fileID: 1958432791}
-    - {fileID: 479274737}
-    - {fileID: 1682851502}
-    - {fileID: 1093334119}
-    - {fileID: 1695869883}
-    - {fileID: 388382820}
-    - {fileID: 746828754}
-    - {fileID: 2114728146}
-    - {fileID: 923157588}
-    - {fileID: 362255462}
-    - {fileID: 1483157858}
-    - {fileID: 1397511059}
-    - {fileID: 1391107548}
-    - {fileID: 27593734}
-    - {fileID: 653349340}
-    - {fileID: 457278100}
-    - {fileID: 800969230}
-    - {fileID: 1067010765}
-    - {fileID: 665952113}
-    - {fileID: 2135279174}
-    - {fileID: 1281164427}
-    - {fileID: 954093323}
-    - {fileID: 153935186}
-    - {fileID: 1225139970}
-    - {fileID: 293344948}
-    - {fileID: 2011308310}
-    - {fileID: 1080244940}
-    - {fileID: 525168258}
-    - {fileID: 1436929897}
-    - {fileID: 1383412994}
-    - {fileID: 976997994}
-    - {fileID: 1184808447}
-    - {fileID: 1938530764}
-    - {fileID: 1965338876}
-    - {fileID: 476562657}
-    - {fileID: 1394328587}
-    - {fileID: 1285777598}
-    - {fileID: 770409742}
-    - {fileID: 1868327348}
-    - {fileID: 627888540}
-    - {fileID: 790497053}
-    - {fileID: 265774171}
-    - {fileID: 402727641}
-    - {fileID: 272770345}
-    - {fileID: 1693773167}
-    - {fileID: 1227281960}
-    - {fileID: 881526197}
-    - {fileID: 1746667131}
-    - {fileID: 759895590}
-    - {fileID: 791325856}
-    - {fileID: 335968737}
     - {fileID: 602346346}
-    - {fileID: 1053090645}
-    - {fileID: 1989703222}
+    - {fileID: 653349340}
+    - {fileID: 1866200379}
+    - {fileID: 100611712}
+    - {fileID: 1537531977}
+    - {fileID: 1958432791}
+    - {fileID: 25624293}
+    - {fileID: 88280491}
+    - {fileID: 1115764895}
+    - {fileID: 1383412994}
+    - {fileID: 954093323}
+    - {fileID: 27593734}
+    - {fileID: 1175939010}
+    - {fileID: 920844518}
+    - {fileID: 1394328587}
+    - {fileID: 135172290}
+    - {fileID: 2077641723}
+    - {fileID: 2123935}
+    - {fileID: 1128920472}
+    - {fileID: 1609465158}
+    - {fileID: 402578302}
+    - {fileID: 728230314}
+    - {fileID: 376013662}
+    - {fileID: 1671227562}
+    - {fileID: 335968737}
+    - {fileID: 57308259}
+    - {fileID: 144405909}
+    - {fileID: 831073353}
+    - {fileID: 1445345279}
+    - {fileID: 691171164}
+    - {fileID: 897151123}
+    - {fileID: 1688085899}
+    - {fileID: 661032731}
+    - {fileID: 1494892144}
+    - {fileID: 665952113}
+    - {fileID: 149604445}
+    - {fileID: 1471699286}
+    - {fileID: 98784388}
+    - {fileID: 1272363944}
+    - {fileID: 525168258}
+    - {fileID: 816145847}
+    - {fileID: 849096144}
+    - {fileID: 1615020172}
+    - {fileID: 1080244940}
+    - {fileID: 790497053}
+    - {fileID: 417858899}
+    - {fileID: 1695869883}
+    - {fileID: 1778089206}
+    - {fileID: 732316539}
+    - {fileID: 84599613}
+    - {fileID: 1281164427}
+    - {fileID: 272770345}
+    - {fileID: 1588806076}
+    - {fileID: 412015573}
+    - {fileID: 1280785917}
+    - {fileID: 651300374}
+    - {fileID: 1205342009}
+    - {fileID: 759801290}
+    - {fileID: 881526197}
+    - {fileID: 1247774744}
+    - {fileID: 1054206360}
     - {fileID: 822409071}
+    - {fileID: 402727641}
+    - {fileID: 1158166383}
+    - {fileID: 1391107548}
+    - {fileID: 309905941}
+    - {fileID: 1539778701}
+    - {fileID: 1868327348}
+    - {fileID: 1120552734}
     - {fileID: 1817564242}
-    - {fileID: 590164596}
-    - {fileID: 62827772}
-    - {fileID: 1948553488}
+    - {fileID: 293344948}
+    - {fileID: 1427402459}
+    - {fileID: 1093334119}
+    - {fileID: 1483157858}
     - {fileID: 1985936247}
     - {fileID: 364406620}
-    - {fileID: 221838817}
-    - {fileID: 412015573}
-    - {fileID: 732316539}
-    - {fileID: 920844518}
-    - {fileID: 1224148868}
-    - {fileID: 149604445}
-    - {fileID: 865571358}
-    - {fileID: 434853929}
-    - {fileID: 1778089206}
-    - {fileID: 144405909}
-    - {fileID: 1931573376}
+    - {fileID: 457278100}
+    - {fileID: 759895590}
+    - {fileID: 1240078490}
+    - {fileID: 1752725813}
+    - {fileID: 1682851502}
+    - {fileID: 881165256}
+    - {fileID: 2016520327}
+    - {fileID: 265951854}
+    - {fileID: 891354450}
+    - {fileID: 1394647601}
+    - {fileID: 1067010765}
+    - {fileID: 71438931}
+    - {fileID: 770409742}
+    - {fileID: 923157588}
     - {fileID: 1743055138}
+    - {fileID: 2115520555}
+    - {fileID: 1078708306}
+    - {fileID: 590707534}
+    - {fileID: 2034302971}
+    - {fileID: 260088250}
+    - {fileID: 398441567}
+    - {fileID: 1436929897}
+    - {fileID: 582653957}
+    - {fileID: 1397511059}
+    - {fileID: 1989703222}
+    - {fileID: 1938530764}
+    - {fileID: 743649782}
+    - {fileID: 221838817}
+    - {fileID: 1224148868}
+    - {fileID: 727546155}
+    - {fileID: 1184808447}
+    - {fileID: 791325856}
+    - {fileID: 1362831115}
+    - {fileID: 154595370}
+    - {fileID: 2012038010}
+    - {fileID: 1931573376}
+    - {fileID: 679632002}
+    - {fileID: 1638109084}
+    - {fileID: 684018281}
+    - {fileID: 1275730948}
+    - {fileID: 147263160}
+    - {fileID: 62827772}
+    - {fileID: 433854517}
+    - {fileID: 2114728146}
+    - {fileID: 1227281960}
+    - {fileID: 713695848}
+    - {fileID: 1135781201}
+    - {fileID: 1746667131}
+    - {fileID: 571842673}
+    - {fileID: 537007221}
+    - {fileID: 362255462}
+    - {fileID: 2121763478}
+    - {fileID: 1339995712}
+    - {fileID: 786044216}
+    - {fileID: 710638517}
+    - {fileID: 629576472}
+    - {fileID: 746828754}
+    - {fileID: 853086199}
+    - {fileID: 1225139970}
+    - {fileID: 1518206562}
+    - {fileID: 627888540}
+    - {fileID: 705901775}
+    - {fileID: 153935186}
+    - {fileID: 1053090645}
+    - {fileID: 975380005}
+    - {fileID: 1948553488}
+    - {fileID: 2135279174}
+    - {fileID: 227207430}
+    - {fileID: 937259029}
+    - {fileID: 2011308310}
+    - {fileID: 1885401003}
+    - {fileID: 2036050382}
+    - {fileID: 479274737}
+    - {fileID: 2045236135}
+    - {fileID: 265774171}
+    - {fileID: 800969230}
+    - {fileID: 1383447616}
+    - {fileID: 590164596}
+    - {fileID: 204826591}
+    - {fileID: 572675449}
+    - {fileID: 865571358}
+    - {fileID: 1120381183}
+    - {fileID: 31402868}
+    - {fileID: 519182429}
+    - {fileID: 2042599107}
+    - {fileID: 388382820}
+    - {fileID: 434853929}
+    - {fileID: 476562657}
+    - {fileID: 1285777598}
+    - {fileID: 224823833}
+    - {fileID: 1693773167}
+    - {fileID: 1916911578}
+    - {fileID: 1965338876}
+    - {fileID: 1507627344}
+    - {fileID: 590704141}
+    - {fileID: 976997994}
+    - {fileID: 1068462029}
+    - {fileID: 340560707}
+    - {fileID: 1242059805}
+    - {fileID: 1338959225}
   GenerationSettings:
     rid: 8246154281408004136
   ProcessorTemplate: 0
@@ -2321,10 +2362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 125163817683932095, guid: d79e38103510cf749bedbce89e00036c, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1080474664}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d79e38103510cf749bedbce89e00036c, type: 3}
 --- !u!114 &2042222780 stripped
@@ -5371,6 +5409,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 456206152}
   - {fileID: 830191541}
   - {fileID: 893038852}
   - {fileID: 692858581}
