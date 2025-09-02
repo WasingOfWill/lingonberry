@@ -43,6 +43,7 @@ MonoBehaviour:
     - PolymindGames
     - PolymindGames.OdinSerializer
     - ProPixelizer
+    - ProPixelizerImportWatchdog
     - RayFireAssembly
     - sapra.InfiniteLands
     - sapra.InfiniteLands.GenerationBuiltin

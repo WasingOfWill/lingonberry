@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.propixelizer": {
+      "version": "ssh://git@github.com/ProPixelizer/ProPixelizer.git#upm_compliant",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "da2b9e67ccf666700f73d80549d805066e68de3a"
+    },
     "com.sapra.infinitelands": {
       "version": "file:com.sapra.infinitelands",
       "depth": 0,

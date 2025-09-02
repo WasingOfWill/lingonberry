@@ -858,6 +858,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4495627808749322323, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      propertyPath: m_Name
+      value: PlayerCamera_InsidePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934027933283894911, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      propertyPath: m_Antialiasing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5290576868022299260, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
       propertyPath: _prefabGuid._guidPart1
       value: 1287843689
