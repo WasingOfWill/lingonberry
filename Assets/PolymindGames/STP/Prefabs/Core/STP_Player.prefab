@@ -858,6 +858,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2202913876373459849, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      propertyPath: FullscreenColorGradingLUT
+      value: 
+      objectReference: {fileID: 2800000, guid: 546bc0c636b42a348bb5ce58aec4fe94, type: 3}
     - target: {fileID: 4495627808749322323, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
       propertyPath: m_Name
       value: PlayerCamera_InsidePrefab
