@@ -26,6 +26,8 @@ namespace PolymindGames
 #endif
         private float _maxHealth = 100f;
 
+        private NetworkPlayerState _networkState;
+
         /// <inheritdoc/>
         public float Health => _health;
 
@@ -46,6 +48,7 @@ namespace PolymindGames
                         float prevHealth = _health;
                         _health = clampedValue;
                         DamageReceived?.Invoke(_health - prevHealth, DamageArgs.Default);
+                        SyncNetworkState();
                     }
                 }
             }
@@ -64,6 +67,15 @@ namespace PolymindGames
         
         /// <inheritdoc/>
         public event UnityAction Respawn;
+
+        private void Start()
+        {
+            // Get reference to NetworkPlayerState from parent
+            _networkState = GetComponentInParent<NetworkPlayerState>();
+            
+            // Initial sync
+            SyncNetworkState();
+        }
         
         /// <inheritdoc/>
         public float RestoreHealth(float value)
@@ -73,6 +85,7 @@ namespace PolymindGames
             if (TryChangeHealth(ref value))
             {
                 HealthRestored?.Invoke(value);
+                SyncNetworkState();
 
                 if (!wasAlive && IsAlive)
                     Respawn?.Invoke();
@@ -90,6 +103,7 @@ namespace PolymindGames
             if (IsAlive && TryChangeHealth(ref damage))
             {
                 DamageReceived?.Invoke(damage, in DamageArgs.Default);
+                SyncNetworkState();
 
                 if (!IsAlive)
                     Death?.Invoke(in DamageArgs.Default);
@@ -107,6 +121,7 @@ namespace PolymindGames
             if (IsAlive && TryChangeHealth(ref damage))
             {
                 DamageReceived?.Invoke(damage, in args);
+                SyncNetworkState();
 
                 if (!IsAlive)
                     Death?.Invoke(args);
@@ -128,6 +143,14 @@ namespace PolymindGames
             return true;
         }
 
+        private void SyncNetworkState()
+        {
+            if (_networkState != null)
+            {
+                _networkState.UpdateState(_health, _networkState.Hunger.Value, _networkState.Stamina.Value);
+            }
+        }
+
         #region Save & Load
         [Serializable]
         private sealed class SaveData
@@ -141,6 +164,7 @@ namespace PolymindGames
             var saveData = (SaveData)data;
             _health = saveData.Health;
             _maxHealth = saveData.MaxHealth;
+            SyncNetworkState();
         }
 
         object ISaveableComponent.SaveMembers() => new SaveData
@@ -151,7 +175,11 @@ namespace PolymindGames
         #endregion
         
         #region Pooling
-        void IPoolableListener.OnAcquired() => RestoreHealth(_maxHealth);
+        void IPoolableListener.OnAcquired()
+        {
+            RestoreHealth(_maxHealth);
+            SyncNetworkState();
+        }
         void IPoolableListener.OnReleased() { }
         #endregion
 

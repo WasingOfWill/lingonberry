@@ -902,6 +902,10 @@ PrefabInstance:
       propertyPath: _instanceGuid._guidPart4
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5436320517771259075, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      propertyPath: _name
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5455599890742393885, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
       propertyPath: _maxWeight
       value: 40
@@ -1220,6 +1224,15 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 6332644228209504343}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8441296488908999749, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8298150575873125889}
+    - targetCorrespondingSourceObject: {fileID: 8441296488908999749, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1505847122877625858}
+    - targetCorrespondingSourceObject: {fileID: 8441296488908999749, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4848103864880005468}
     - targetCorrespondingSourceObject: {fileID: 7851912007779225446, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
       insertIndex: 1
       addedObject: {fileID: 7641925109896946671}
@@ -1251,6 +1264,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9015290475251519835, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
   m_PrefabInstance: {fileID: 4375421667637209817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5304427538133313180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8441296488908999749, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
+  m_PrefabInstance: {fileID: 4375421667637209817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8298150575873125889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304427538133313180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1116209172
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &1505847122877625858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304427538133313180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dad81a09e3d2a847ae5a255f6334585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
+  AuthorityMode: 0
+  TickSyncChildren: 0
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
+  Interpolate: 1
+  SlerpPosition: 0
+--- !u!114 &4848103864880005468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304427538133313180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c8bbb237f704448b705d5af7c2c963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  Health:
+    m_InternalValue: 100
+  Hunger:
+    m_InternalValue: 100
+  Stamina:
+    m_InternalValue: 100
 --- !u!1 &5786851251226289599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7851912007779225446, guid: 7a6c2c5ec61df0c46b94e4480b90c921, type: 3}
